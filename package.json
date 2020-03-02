@@ -1,0 +1,29 @@
+{
+  "name": "studying-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cp env/.env.local src/env/.env && nodemon",
+    "start:local": "rm -rf build && tsc && cp env/.env.local src/env/.env && nodemon build/src",
+    "ts:node": "cp env/.env.local src/env/.env && ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express-handlebars": "^3.1.0",
+    "@types/mongoose": "^5.7.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "handlebars": "^4.5.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  }
+}
